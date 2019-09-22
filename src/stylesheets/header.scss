@@ -5,11 +5,12 @@ $colorButton: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	font-weight: bold;
 	margin-top: 18px;
 }
-%button-menu {
+%button {
 	@extend %text-menu;
-	height: 34px;
+	max-height: 34px;
 	font-size: 12px;
 	line-height: 15px;
+	font-weight: bold;
 	text-transform: uppercase;
 	border: solid;
 	border-radius: 22px;
@@ -29,7 +30,7 @@ $colorButton: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 		@extend %text-menu;
 		font-size: 14px;
 		line-height: 17px;
-		padding: 2px;
+		padding-top: 2px;
 		color: rgba(31, 32, 65, 0.5);
 		margin-right: 30px;
 		margin-top: 26px;
@@ -41,19 +42,19 @@ $colorButton: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	}
 }
 .button--register {
-	@extend %button-menu;
-	width: 101px;
+	@extend %button;
+	max-width: 101px;
 	color: #BC9CFF;
 	background-color: white;
 	padding: 9px 20px 10px 19px;
-	margin-right: 160px;
+	margin-right: 140px;
 	&:hover {
 		@extend %button-menu-hover;
 	}
 }
 .button--login {
-	@extend %button-menu;
-	width: 79px;
+	@extend %button;
+	max-width: 79px;
 	color: #BC9CFF;
 	padding: 9px 20px 10px 20px;
 	background-color: white;
@@ -65,8 +66,9 @@ $colorButton: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 .nameOrganization {
 	margin-top: 15px;
 	margin-left: 140px;
-	margin-right: 297px;	
-	width: 60px;
+	margin-right: 297px;
+	margin-bottom: 15px;	
+	width: 106px;
 	height: 40px;
-	background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;	
+	background: url('../img/headerAndfoot/Logo.png') no-repeat;
 }

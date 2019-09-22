@@ -1,0 +1,28 @@
+mixin link(name, name2, name3, name4)
+	ul
+		li 
+			a(href="#")=name
+		li 
+			a(href="#")=name2
+		li 
+			a(href="#")=name3
+		li 
+			a(href="#")=name4
+.foot
+	.logo-foot
+		div(class="logo-foot-img")
+		p  Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+	.section-foot
+		p Navigation
+		+link('About Us', 'News', 'Support', 'Products')
+	.section-foot
+		p About us
+		+link('Who we are', 'Our team', 'Careers', 'Investors')
+	.section-foot
+		p Support
+		+link('Documentation', 'Community', 'Get in Touch')
+	.section-foot
+		p Subscribe to our newsletter
+		p Receive our latest news and promotions in your inbox!
+		input(type="text", placeholder
+="Your email address ")
