@@ -6,20 +6,17 @@
     <title>Webpack app</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
-</head>
 <header>
   <div class="menu">
-    <div>
-      <div class="nameOrganization"></div>
-    </div><a class="menuItem" href="#">Home</a><a class="menuItem" href="#">About Us</a><a class="menuItem" href="#">Services</a><a class="menuItem" href="#">Careers</a><a class="menuItem" href="#">News</a><a class="menuItem" href="#">Documentation</a>
+    <div class="nameOrganization"></div><a class="menuItem" href="#">Home</a><a class="menuItem" href="#">About Us</a><a class="menuItem" href="#">Services</a><a class="menuItem" href="#">Careers</a><a class="menuItem" href="#">News</a><a class="menuItem" href="#">Documentation</a>
     <button class="button--login">Login</button>
     <button class="button--register">Register</button>
   </div>
 </header>
+    <div class="content"></div>
     <div class="foot">
       <div class="logo-foot">
         <div class="logo-foot-img"></div>
@@ -54,7 +51,18 @@
       </div>
       <div class="section-foot">
         <p>Subscribe to our newsletter</p>
-        <p>Receive our latest news and promotions in your inbox!</p>
+        <div id="section-foot-p">Receive our latest news and promotions in your inbox!</div>
+        <label>
+          <input type="text" placeholder="Your email address ">
+        </label>
+      </div>
+    </div>
+    <div class="basement">
+      <p> Copyright © 2018 Toxin UI Kit. All rights reserved.</p>
+      <div class="basement-communication">
+        <div class="basement-icon"></div>
+        <div class="basement-icon"></div>
+        <div class="basement-icon"></div>
       </div>
     </div>
   </body>
